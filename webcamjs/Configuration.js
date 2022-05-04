@@ -8,6 +8,9 @@
             image_format: 'jpeg',
             jpeg_quality: 90
         });
+         Webcam.set('constraints',{
+            facingMode: "environment"
+        });
         try {
             Webcam.attach('#camera');
         } catch (e) {
