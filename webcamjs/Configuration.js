@@ -6,10 +6,11 @@
             //			dest_width: 300,
             //			dest_height: 220
             image_format: 'jpeg',
-            jpeg_quality: 90
+            jpeg_quality: 90,
+            facingMode: "user"
         });
          Webcam.set('constraints',{
-            facingMode: "environment"
+            facingMode: "user"
         });
         try {
             Webcam.attach('#camera');
