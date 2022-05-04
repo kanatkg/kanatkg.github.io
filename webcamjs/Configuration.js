@@ -5,9 +5,11 @@
             height: 220,
             image_format: 'jpeg',
             jpeg_quality: 90,
-            facingMode: "environment"
+            facingMode: "user"
         });
-        
+         Webcam.set('constraints',{
+            facingMode: "user"
+        });
         try {
             Webcam.attach('#camera');
         } catch (e) {
@@ -37,9 +39,12 @@ function change_camera() {
         //			dest_height: 220
         image_format: 'jpeg',
         jpeg_quality: 90,
-        facingMode: "user"
+        facingMode: "environment"
     }
     );
+     Webcam.set('constraints',{
+            facingMode: "environment"
+        });
     try {
         Webcam.attach('#camera');
     } catch (e) {
