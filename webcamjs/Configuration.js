@@ -5,7 +5,7 @@
             height: 220,
             image_format: 'jpeg',
             jpeg_quality: 90,
-            facingMode: "user"
+            facingMode: "environment"
         });
         
         try {
@@ -37,7 +37,7 @@ function change_camera() {
         //			dest_height: 220
         image_format: 'jpeg',
         jpeg_quality: 90,
-        facingMode: "environment"
+        facingMode: "user"
     }
     );
     try {
