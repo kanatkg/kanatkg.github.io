@@ -5,7 +5,7 @@
             height: 220,
             image_format: 'jpeg',
             jpeg_quality: 90,
-            facingMode: "user"
+           // facingMode: "user"
         });
          Webcam.set('constraints',{
             facingMode: "user"
@@ -39,7 +39,7 @@ function change_camera() {
         //			dest_height: 220
         image_format: 'jpeg',
         jpeg_quality: 90,
-        facingMode: "environment"
+      //  facingMode: "environment"
     }
     );
      Webcam.set('constraints',{
