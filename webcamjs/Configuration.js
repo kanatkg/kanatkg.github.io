@@ -29,7 +29,7 @@ function take_snapshot() {
 function change_camera() {
     // take snapshot and get image data
   
-   // Webcam.reset();
+    Webcam.reset();
     Webcam.set({
         width: 300,
         height: 220,
