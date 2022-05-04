@@ -3,15 +3,11 @@
         Webcam.set({
             width: 300,
             height: 220,
-            //			dest_width: 300,
-            //			dest_height: 220
             image_format: 'jpeg',
             jpeg_quality: 90,
             facingMode: "user"
         });
-         Webcam.set('constraints',{
-            facingMode: "user"
-        });
+        
         try {
             Webcam.attach('#camera');
         } catch (e) {
@@ -33,7 +29,7 @@ function take_snapshot() {
 function change_camera() {
     // take snapshot and get image data
   
-    Webcam.reset();
+   // Webcam.reset();
     Webcam.set({
         width: 300,
         height: 220,
@@ -41,7 +37,7 @@ function change_camera() {
         //			dest_height: 220
         image_format: 'jpeg',
         jpeg_quality: 90,
-        facingMode: "user"
+        facingMode: "environment"
     }
     );
     try {
