@@ -13,29 +13,6 @@
         <h1>Добавление нового пользователя</h1>
 
         
-        <script>
-            function showNotification() {
-                const notification = new Notification("New message from dcode!", {
-                    body: "hey mate how are you? you want?"
-                });
-
-                notification.onclick = (e) => {
-                    window.location.href = "https://google.kg";
-                };
-            }
-
-            console.log(Notification.permission);
-
-            if (Notification.permission == "granded"){
-                showNotification();
-            }
-            else if (Notification.permission !== "denied"){
-                Notification.requestPermission().then(permission => {
-                    if (permission === "granted") {
-                        showNotification();
-                    }
-                });
-            }
-        </script>
+        
     </body>
 </html>
