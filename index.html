@@ -3,6 +3,11 @@
     <head>
         <title>Главная страница</title>
         <meta charset="utf-8">
+        <script src="push.min.js"></script>
+        <script src="serviceWorker.min.js"></script>
+        <script type="text/javascript">
+            Push.create('Hello World!');
+        </script>
     </head>
     <body>
         <h1>Добавление нового пользователя</h1>
@@ -29,7 +34,7 @@
                     if (permission === "granted") {
                         showNotification();
                     }
-                }); 
+                });
             }
         </script>
     </body>
